@@ -144,7 +144,7 @@ O handout inclui exercícios progressivos:
 !!! example "Desafio Final: Sistema de Empréstimos"
     Implementar funcionalidade completa do zero
 
-## 🔄 Fluxo de Desenvolvimento
+## Fluxo de Desenvolvimento
 
 ```mermaid
 flowchart LR

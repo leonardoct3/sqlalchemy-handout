@@ -1,0 +1,115 @@
+/* Paleta de cores Insper Jr. personalizada */
+:root {
+  /* Cores principais Insper Jr. */
+  --insper-red: #dc2626;
+  --insper-dark-red: #b91c1c;
+  --insper-light-red: #ef4444;
+  --insper-grey: #6b7280;
+  --insper-dark-grey: #374151;
+  --insper-light-grey: #f3f4f6;
+}
+
+/* Customizações para melhor integração com a identidade Insper Jr. */
+
+/* Header personalizado */
+.md-header {
+  background: linear-gradient(135deg, var(--insper-red) 0%, var(--insper-dark-red) 100%);
+}
+
+/* Links e elementos interativos */
+.md-typeset a {
+  color: var(--insper-red);
+}
+
+.md-typeset a:hover {
+  color: var(--insper-dark-red);
+}
+
+/* Botões primários */
+.md-button--primary {
+  background-color: var(--insper-red);
+  border-color: var(--insper-red);
+}
+
+.md-button--primary:hover {
+  background-color: var(--insper-dark-red);
+  border-color: var(--insper-dark-red);
+}
+
+/* Códigos e blocos de destaque */
+.md-typeset .highlight .gp {
+  color: var(--insper-red);
+}
+
+/* Admonitions personalizados */
+.md-typeset .admonition.tip {
+  border-color: var(--insper-red);
+}
+
+.md-typeset .admonition.tip > .admonition-title {
+  background-color: rgba(220, 38, 38, 0.1);
+  border-color: var(--insper-red);
+}
+
+/* Navegação ativa */
+.md-nav__item--active > .md-nav__link {
+  color: var(--insper-red);
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar-thumb {
+  background-color: var(--insper-grey);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--insper-dark-grey);
+}
+
+/* Tabelas */
+.md-typeset table th {
+  background-color: var(--insper-light-grey);
+  color: var(--insper-dark-grey);
+}
+
+/* Icons personalizados */
+.md-typeset .admonition.example > .admonition-title::before {
+  background-color: var(--insper-red);
+}
+
+/* Mermaid diagrams */
+.mermaid .node rect {
+  stroke: var(--insper-red);
+}
+
+/* Code blocks */
+.md-typeset pre > code {
+  border-left: 4px solid var(--insper-red);
+}
+
+/* Melhorias para contraste e legibilidade */
+.md-typeset .highlight .k,
+.md-typeset .highlight .kn {
+  color: var(--insper-dark-red);
+  font-weight: bold;
+}
+
+/* Footer */
+.md-footer {
+  background-color: var(--insper-dark-grey);
+}
+
+/* Search */
+.md-search__input::placeholder {
+  color: var(--insper-grey);
+}
+
+/* Tabs */
+.md-typeset .tabbed-set > input:checked + label {
+  border-color: var(--insper-red);
+  color: var(--insper-red);
+}
+
+/* Progress bar */
+.md-progress__value {
+  background-color: var(--insper-red);
+}

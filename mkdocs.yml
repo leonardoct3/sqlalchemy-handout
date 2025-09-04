@@ -8,36 +8,21 @@ repo_name: sqlalchemy-handout
 theme:
   name: material
   palette:
-    # primary: grey
-    # Light mode
+    # Paleta Insper Jr. - Modo Claro
     - scheme: default
-      primary: grey
+      primary: red
+      accent: grey
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
+        icon: material/brightness-7
+        name: Mudar para modo escuro
 
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      primary: grey
+    # Paleta Insper Jr. - Modo Escuro
+    - scheme: slate
+      primary: red
+      accent: red
       toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
-
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default 
-      primary: grey
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      primary: grey
-      scheme: slate
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to system preference
+        icon: material/brightness-4
+        name: Mudar para modo claro
   features:
     - content.code.copy
     - content.code.select
@@ -126,6 +111,9 @@ plugins:
       prompt_literal_start:
         - "$"
         - ">"
+
+extra_css:
+  - stylesheets/custom.css
 
 extra_javascript:
   - https://unpkg.com/mathjax/es5/tex-mml-chtml.js
